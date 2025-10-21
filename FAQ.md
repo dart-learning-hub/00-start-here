@@ -1,12 +1,26 @@
 # ❓ FAQ - Frequently Asked Questions
 
-[🇧🇷 Versão em Português](#português) | [🇺🇸 English Version](#english)
+<div align="center">
+
+### 🌍 Choose Your Language / Escolha seu Idioma
+
+[![Português](https://img.shields.io/badge/Idioma-Português-green?style=for-the-badge)](#português)
+[![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge)](#english)
+
+</div>
 
 ---
 
-<a name="português"></a>
+<div align="center">
 
-## 🇧🇷 Português
+## <a name="português"></a>
+🇧🇷 **PORTUGUÊS**
+
+[![Switch to English](https://img.shields.io/badge/🇺🇸_Switch_to-English-blue)](#english)
+
+</div>
+
+---
 
 ### Perguntas Frequentes - Dart Learning Hub
 
@@ -292,21 +306,21 @@ Escolha baseado no mercado da sua região e suas preferências!
 
 **A:** Sim! Licença MIT permite. Pedimos apenas:
 - Dê os devidos créditos
-- Mantenha a licença MIT se redistribuir
+- Mantenha licença MIT se redistribuir
 - Se possível, contribua com melhorias
 
 ---
 
 ## 🐛 Problemas Comuns
 
-### Q: "pub get failed" ao instalar packages
+### Q: "pub get failed" ao instalar pacotes
 
 **A:**
 ```bash
-# Limpe o cache
+# Limpar cache
 dart pub cache repair
 
-# Tente novamente
+# Tentar novamente
 dart pub get
 ```
 
@@ -315,8 +329,8 @@ dart pub get
 **A:** Possíveis causas:
 - Erro de sintaxe não resolvido
 - Widget não é StatefulWidget
-- Precisa fazer hot restart (não reload)
-- Versão desatualizada do Flutter
+- Precisa hot restart (não reload)
+- Versão do Flutter desatualizada
 
 Solução: `flutter clean && flutter pub get`
 
@@ -329,7 +343,7 @@ Solução: `flutter clean && flutter pub get`
 
 ### Q: Meu código não passa nos testes
 
-**A:** Dicas para debug:
+**A:** Dicas de debug:
 ```dart
 // Use prints para debug
 print('Valor da variável: $variavel');
@@ -346,9 +360,9 @@ void main() {
 
 ### Q: Flutter doctor mostra erros
 
-**A:** Resolva um por vez:
+**A:** Resolva um de cada vez:
 ```bash
-flutter doctor -v  # Veja detalhes
+flutter doctor -v  # Ver detalhes
 
 # Erros comuns:
 # - Android SDK: Instale Android Studio
@@ -358,15 +372,15 @@ flutter doctor -v  # Veja detalhes
 
 ### Q: Erro "Null check operator used on a null value"
 
-**A:** Você tentou acessar algo que é `null`:
+**A:** Você tentou acessar algo que está `null`:
 ```dart
 // ❌ Erro
 String? nome;
-print(nome!.length); // nome é null!
+print(nome!.length); // nome está null!
 
 // ✅ Correto
 String? nome;
-print(nome?.length ?? 0); // Safe
+print(nome?.length ?? 0); // Seguro
 ```
 
 ---
@@ -379,15 +393,15 @@ print(nome?.length ?? 0); // Safe
 - Módulos de tópicos específicos (GraphQL, gRPC)
 - Desafios práticos estilo LeetCode
 - Case studies de apps reais
-- Padrões de design avançados
+- Design patterns avançados
 
-### Q: Vão adicionar vídeo-aulas?
+### Q: Vocês vão adicionar vídeo-aulas?
 
-**A:** Não há planos imediatos. O foco é conteúdo escrito de qualidade. Mas contribuições de vídeos pela comunidade são bem-vindas!
+**A:** Não há planos imediatos. O foco é conteúdo escrito de qualidade. Mas contribuições de vídeos da comunidade são bem-vindas!
 
 ### Q: Haverá versão mobile do hub (app)?
 
-**A:** Seria ótimo! Se alguém da comunidade quiser desenvolver como projeto, seria muito bem-vindo.
+**A:** Seria ótimo! Se alguém da comunidade quiser desenvolver como projeto, será muito bem-vindo.
 
 ### Q: Posso sugerir parcerias?
 
@@ -402,20 +416,29 @@ print(nome?.length ?? 0); // Safe
 
 **Sua pergunta não está aqui?**
 
-1. 🔍 Busque nas [Issues fechadas](../../issues?q=is%3Aissue+is%3Aclosed)
+1. 🔍 Busque nas [Issues Fechadas](../../issues?q=is%3Aissue+is%3Aclosed)
 2. 💬 Abra uma [nova Issue](../../issues/new)
 3. 🌐 Pergunte no [Discord Flutterando](https://discord.gg/flutterando)
 4. 📖 Inicie uma [Discussion](../../discussions)
 
-**Encontrou um erro neste FAQ?**
+**Encontrou erro neste FAQ?**
 - Abra um PR corrigindo
 - Ou abra uma issue apontando o erro
 
 ---
+---
+---
 
-<a name="english"></a>
+<div align="center">
 
-## 🇺🇸 English
+## <a name="english"></a>
+🇺🇸 **ENGLISH**
+
+[![Mudar para Português](https://img.shields.io/badge/🇧🇷_Mudar_para-Português-green)](#português)
+
+</div>
+
+---
 
 ### Frequently Asked Questions - Dart Learning Hub
 
@@ -427,19 +450,19 @@ Here you'll find answers to the most common questions about the project.
 
 ### Q: What is Dart Learning Hub?
 
-**A:** It's a complete learning ecosystem for Dart, Flutter, and Backend, organized into 7 progressive phases. All content is free, open source, and focused on practical learning through projects.
+**A:** It's a complete learning ecosystem for Dart, Flutter and Backend, organized in 7 progressive phases. All content is free, open source and focused on practical learning through projects.
 
 ### Q: Is this an official Google/Dart/Flutter project?
 
-**A:** No, it's an independent community project created by a WorldSkills instructor. It has no official affiliation with Google but follows best practices and official documentation.
+**A:** No, it's an independent community project created by a WorldSkills instructor. It has no official affiliation with Google, but follows best practices and official documentation.
 
 ### Q: Is the content free?
 
-**A:** Yes! All material is under MIT license and 100% free. You can use it to study, teach, and even for commercial purposes.
+**A:** Yes! All material is under MIT license and is 100% free. You can use it to study, teach and even for commercial purposes.
 
 ### Q: Why bilingual (PT/EN)?
 
-**A:** To make content accessible to both Brazilian and international communities. It also helps Brazilian students practice technical English.
+**A:** To make content accessible to both Brazilian and international communities. Additionally, it helps Brazilian students practice technical English.
 
 ---
 
@@ -451,7 +474,7 @@ Here you'll find answers to the most common questions about the project.
 
 ### Q: Do I need to know English?
 
-**A:** Not mandatory. All content is bilingual (PT/EN). However, basic English helps since many technical terms are in English.
+**A:** Not mandatory. All content is bilingual (PT/EN). However, knowing basic English helps, as many technical terms are in English.
 
 ### Q: How long does it take to complete everything?
 
@@ -472,16 +495,16 @@ Here you'll find answers to the most common questions about the project.
 
 **A:** We don't recommend it. Each phase prepares for the next. However, if you have experience:
 - **Know another language?** Start at Phase 1 but accelerate
-- **Already know basic Dart?** Evaluate Phase 2 or 3
-- **Just want Flutter?** We recommend at least Phase 1 first
+- **Already know basic Dart?** Assess Phase 2 or 3
+- **Only want Flutter?** We recommend at least Phase 1 first
 
 ---
 
 ## 💻 Technical
 
-### Q: Which operating system can I use?
+### Q: What operating system can I use?
 
-**A:** Windows, macOS, or Linux. Dart and Flutter work on all.
+**A:** Windows, macOS or Linux. Dart and Flutter work on all.
 
 ### Q: Do I need a powerful computer?
 
@@ -493,21 +516,21 @@ Here you'll find answers to the most common questions about the project.
 ### Q: Which IDE should I use?
 
 **A:** We recommend **VS Code** (free) with Dart and Flutter extensions. Alternatives:
-- Android Studio (heavier but complete for Flutter)
+- Android Studio (heavier, but complete for Flutter)
 - IntelliJ IDEA Community (good option)
 - Any text editor (for pure Dart)
 
 ### Q: How do I set up the environment?
 
-**A:** See the complete guide in [`00-start-here/README.md`](./README.md#setting-up-environment). Basically:
+**A:** See the complete guide in [`00-start-here/README.md`](./README.md#setting-up-the-environment). Basically:
 1. Install Dart SDK
 2. Install VS Code
 3. Install Dart/Flutter extensions
-4. For Flutter: Install Flutter SDK
+4. For Flutter: install Flutter SDK
 
-### Q: I got "Dart SDK not found" error. What do I do?
+### Q: I got a "Dart SDK not found" error. What do I do?
 
-**A:** Your PATH is probably not configured. Check:
+**A:** Your PATH probably isn't configured. See:
 - **Windows:** Add Dart to PATH in environment variables
 - **macOS/Linux:** Add to `.bashrc` or `.zshrc`
 
@@ -515,7 +538,7 @@ Check the [official documentation](https://dart.dev/get-dart#install).
 
 ---
 
-## 📖 About Content
+## 📖 About the Content
 
 ### Q: Do exercises have solutions?
 
@@ -544,7 +567,7 @@ Check the [official documentation](https://dart.dev/get-dart#install).
 
 ### Q: When will new modules be released?
 
-**A:** We don't have fixed dates since it's maintained by volunteers. Follow the repo to get notifications of new releases.
+**A:** We don't have fixed dates, as it's maintained by volunteers. Follow the repo to receive notifications of new releases.
 
 ---
 
@@ -825,6 +848,8 @@ print(name?.length ?? 0); // Safe
 <div align="center">
 
 **Made with ❤️ for the Dart/Flutter community**
+
+[![Back to Top](https://img.shields.io/badge/⬆️_Back_to-Top-blue)](#-faq---frequently-asked-questions)
 
 [Back to README](./README.md) • [View Roadmap](./ROADMAP.md) • [Contributing](./CONTRIBUTING.md)
 

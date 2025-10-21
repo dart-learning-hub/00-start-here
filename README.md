@@ -1,12 +1,26 @@
 # 🚀 Start Here - Dart Learning Hub
 
-[🇧🇷 Versão em Português](#português) | [🇺🇸 English Version](#english)
+<div align="center">
+
+### 🌍 Choose Your Language / Escolha seu Idioma
+
+[![Português](https://img.shields.io/badge/Idioma-Português-green?style=for-the-badge)](#português)
+[![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge)](#english)
+
+</div>
 
 ---
 
-<a name="português"></a>
+<div align="center">
 
-## 🇧🇷 Português
+## <a name="português"></a>
+🇧🇷 **PORTUGUÊS**
+
+[![Switch to English](https://img.shields.io/badge/🇺🇸_Switch_to-English-blue)](#english)
+
+</div>
+
+---
 
 ### Bem-vindo ao Dart Learning Hub!
 
@@ -296,7 +310,7 @@ Este projeto é **open source** e **aberto a contribuições**!
 
 ## 📜 Licença
 
-Este projeto está sob a licença **MIT**.
+Este projeto está sob licença **MIT**.
 
 Isso significa que você pode:
 - ✅ Usar para fins educacionais
@@ -304,22 +318,22 @@ Isso significa que você pode:
 - ✅ Modificar e distribuir
 - ✅ Usar em projetos privados
 
-**[Ver LICENSE completa →](./LICENSE)**
+**[Ver LICENSE completo →](./LICENSE)**
 
 ---
 
 ## 💬 Precisa de Ajuda?
 
-- 📖 Leia a [FAQ](./FAQ.md)
+- 📖 Leia o [FAQ](./FAQ.md)
 - 💬 Abra uma [Issue](../../issues)
-- 🌐 Junte-se à comunidade Flutterando
+- 🌐 Entre na comunidade Flutterando
 
 ---
 
 ## ⭐ Apoie o Projeto
 
 Se este projeto está te ajudando:
-- ⭐ Deixe uma estrela nos repositórios
+- ⭐ Dê estrela nos repositórios
 - 🔄 Compartilhe com amigos
 - 💬 Dê feedback
 - 🤝 Contribua com melhorias
@@ -329,14 +343,23 @@ Se este projeto está te ajudando:
 **🎯 Boa jornada de aprendizado!**
 
 ---
+---
+---
 
-<a name="english"></a>
+<div align="center">
 
-## 🇺🇸 English
+## <a name="english"></a>
+🇺🇸 **ENGLISH**
+
+[![Mudar para Português](https://img.shields.io/badge/🇧🇷_Mudar_para-Português-green)](#português)
+
+</div>
+
+---
 
 ### Welcome to Dart Learning Hub!
 
-This is the **starting point** for your learning journey in Dart, Flutter, and Backend. Here you'll find all resources, guides, and the complete project roadmap.
+This is the **starting point** of your learning journey in Dart, Flutter, and Backend. Here you'll find all resources, guides, and the complete project roadmap.
 
 ---
 
@@ -358,22 +381,22 @@ This is the **starting point** for your learning journey in Dart, Flutter, and B
 
 ## 📚 About the Project
 
-**Dart Learning Hub** is a complete learning ecosystem covering:
+**Dart Learning Hub** is a complete learning ecosystem that covers:
 
 ### 🎯 Goals
 
 - Provide a **structured path** from basic to advanced
 - Emphasize **practical learning** through projects
 - Prepare for **professional competitions** (like WorldSkills)
-- Enable **job market readiness** in Dart/Flutter
+- Empower for the **job market** in Dart/Flutter
 
 ### 🏗️ Structure
 
-The hub is organized into **7 progressive phases**, each with:
-- ✅ Theoretical concepts clearly explained
+The hub is organized in **7 progressive phases**, each with:
+- ✅ Theoretical concepts explained clearly
 - 💻 Commented code examples
 - 📝 Progressive practical exercises
-- 🎯 Final project consolidating learning
+- 🎯 Final project that consolidates learning
 
 ---
 
@@ -383,7 +406,7 @@ The hub is organized into **7 progressive phases**, each with:
 
 ### 1️⃣ Identify your level
 
-**Complete beginner?**
+**Absolute beginner?**
 - Start at **Phase 1: Dart Essentials**
 - Never programmed? Perfect! This is your starting point.
 
@@ -677,6 +700,8 @@ If this project is helping you:
 <div align="center">
 
 **Made with ❤️ for the Dart/Flutter community**
+
+[![Back to Top](https://img.shields.io/badge/⬆️_Back_to-Top-blue)](#-start-here---dart-learning-hub)
 
 [Complete Roadmap](./ROADMAP.md) • [First Module](https://github.com/dart-learning-hub/01-dart-fundamentals-core) • [Contribute](./CONTRIBUTING.md)
 

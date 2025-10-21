@@ -1,12 +1,26 @@
 # 🗺️ Roadmap - Dart Learning Hub
 
-[🇧🇷 Versão em Português](#português) | [🇺🇸 English Version](#english)
+<div align="center">
+
+### 🌍 Choose Your Language / Escolha seu Idioma
+
+[![Português](https://img.shields.io/badge/Idioma-Português-green?style=for-the-badge)](#português)
+[![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge)](#english)
+
+</div>
 
 ---
 
-<a name="português"></a>
+<div align="center">
 
-## 🇧🇷 Português
+## <a name="português"></a>
+🇧🇷 **PORTUGUÊS**
+
+[![Switch to English](https://img.shields.io/badge/🇺🇸_Switch_to-English-blue)](#english)
+
+</div>
+
+---
 
 ### Roadmap Completo de Aprendizado
 
@@ -306,147 +320,143 @@ API REST completa para gerenciamento de tarefas (sem banco de dados ainda).
 - Guards para autorização
 - Interceptors
 - Exception filters
-- Validation pipes
-- Configuration management
-- Environment variables
-- Logging strategies
+- Pipes para validação
+- WebSockets
+- Server-Sent Events (SSE)
 
 **Exercícios:** 15+ exercícios  
-**Projeto:** Sistema de autenticação JWT
+**Projeto:** API com autenticação JWT
 
 #### 4.2 - `04-postgresql-dart`
 **Tópicos:**
 - Instalando PostgreSQL
-- Package `postgres`
-- Connection pooling
-- Raw queries
+- Conectando com `postgres` package
+- Queries SQL básicas (SELECT, INSERT, UPDATE, DELETE)
 - Prepared statements
 - Transactions
-- Migrations básicas
-- CRUD operations
-- Relacionamentos (1:N, N:N)
-- Índices e otimização
+- Connection pooling
+- Migrations com `drift` ou similar
+- Schema design
 
 **Exercícios:** 15+ exercícios  
-**Projeto:** API de blog com PostgreSQL
+**Projeto:** API com persistência em PostgreSQL
 
 #### 4.3 - `04-mongodb-dart`
 **Tópicos:**
 - Instalando MongoDB
-- Package `mongo_dart`
-- Connections e database
-- Collections
+- Conectando com `mongo_dart`
 - CRUD operations
-- Query operators
+- Queries e filtros
 - Aggregation pipeline
-- Índices
-- Embedded documents
-- Referencias entre documentos
+- Indexes
+- Schema validation
+- Embedded vs referenced documents
 
-**Exercícios:** 12+ exercícios  
-**Projeto:** API de e-commerce com MongoDB
+**Exercícios:** 10+ exercícios  
+**Projeto:** API com MongoDB
 
-#### 4.4 - `04-projeto-fullstack-api`
+#### 4.4 - `04-projeto-backend-ecommerce`
 **Projeto Final Integrado:**
 
-API completa de gerenciamento de projetos (estilo Trello/Asana).
+Backend completo de e-commerce com autenticação.
 
 **Funcionalidades:**
 - Autenticação JWT
-- CRUD de usuários, projetos, tarefas
-- Relacionamentos complexos
-- PostgreSQL para dados estruturados
-- Upload de arquivos
-- Paginação e filtros
+- CRUD de produtos
+- Carrinho de compras
+- Sistema de pedidos
+- PostgreSQL para dados transacionais
+- MongoDB para logs e analytics
 - Testes unitários e de integração
 
 **Conceitos aplicados:**
-- Vaden framework completo
-- PostgreSQL com migrations
-- Autenticação e autorização
-- Clean architecture
+- Vaden avançado
+- Multiple databases
+- Auth & authorization
 - Testing
+- Production-ready patterns
 
 ---
 
 ## 🔷 FASE 5: Flutter Fundamentos
 
 **Duração:** 6-8 semanas  
-**Pré-requisitos:** Fase 1 completa (mínimo)  
-**Objetivo:** Criar interfaces mobile com Flutter
+**Pré-requisitos:** Fase 1 completa (Fases 2-4 opcionais)  
+**Objetivo:** Dominar os fundamentos do Flutter
 
 ### 📚 O que você vai aprender:
 
-- Widgets fundamentais
-- Layout system
-- Stateless vs Stateful widgets
-- Navegação básica
-- Temas e estilos
-- Gestures e interações
+- Widgets básicos
+- Layout e composição
+- Navegação
+- Gerenciamento de estado básico (setState)
+- Assets e imagens
+- Formulários
+- Listas e grids
 
 ### 📦 Repositórios:
 
-#### 5.1 - `05-flutter-widgets-layouts`
+#### 5.1 - `05-flutter-basics-widgets`
 **Tópicos:**
-- Setup Flutter
-- Widget tree
-- MaterialApp e Scaffold
-- Widgets básicos (Text, Image, Icon, Button)
-- Container, Padding, Margin
-- Row, Column
-- Stack, Positioned
-- ListView, GridView
+- Instalação Flutter
+- Estrutura de projeto Flutter
+- Material Design vs Cupertino
+- StatelessWidget vs StatefulWidget
+- Widgets básicos (Text, Container, Row, Column)
+- Padding, Margin, Alignment
+- Scaffold, AppBar, BottomNavigationBar
+- Buttons (ElevatedButton, TextButton, IconButton)
+- Icons e Colors
+
+**Exercícios:** 15+ exercícios  
+**Projeto:** App de perfil estático
+
+#### 5.2 - `05-flutter-layout-navigation`
+**Tópicos:**
+- Layout widgets (Stack, Expanded, Flexible)
+- ListView e GridView
 - SingleChildScrollView
-- Expanded, Flexible
-
-**Exercícios:** 20+ exercícios  
-**Projeto:** Tela de perfil responsiva
-
-#### 5.2 - `05-flutter-navigation-routes`
-**Tópicos:**
-- Navigator.push/pop
+- Navigator e rotas
 - Named routes
 - Passing data between screens
-- Retornando dados
-- Route generators
-- Navegação aninhada
-- Bottom navigation
-- Drawer navigation
-- Tab navigation
+- Hero animations
+- Bottom sheets e dialogs
 
 **Exercícios:** 15+ exercícios  
-**Projeto:** App multi-telas com navegação
+**Projeto:** App multi-tela com navegação
 
-#### 5.3 - `05-flutter-state-basics`
+#### 5.3 - `05-flutter-state-forms`
 **Tópicos:**
-- StatelessWidget
-- StatefulWidget
-- `setState()`
-- Lifecycle methods
-- InheritedWidget (conceito)
-- ValueNotifier
-- Por que state management?
+- setState() e state management
+- TextEditingController
+- Form e FormField
+- Validation
+- TextField, Checkbox, Radio, Switch
+- DatePicker e TimePicker
+- DropdownButton
+- InheritedWidget básico
 
 **Exercícios:** 15+ exercícios  
-**Projeto:** Contador interativo avançado
+**Projeto:** Formulário de cadastro completo
 
-#### 5.4 - `05-projeto-expense-tracker`
+#### 5.4 - `05-projeto-flutter-todo-app`
 **Projeto Final Integrado:**
 
-App de controle de despesas pessoais.
+App completo de TODO list com persistência local.
 
 **Funcionalidades:**
-- Adicionar/editar/remover despesas
-- Categorização
-- Filtros por data
-- Gráficos simples
-- Navegação entre telas
-- Persistência local (SharedPreferences)
+- CRUD de tarefas
+- Filtros (todas/pendentes/concluídas)
+- Categorias
+- Data de vencimento
+- Persistência com SharedPreferences
+- UI responsiva
 
 **Conceitos aplicados:**
-- Widgets e layouts complexos
+- Todos os widgets aprendidos
 - Navegação
-- State management básico
+- State management com setState
+- Persistência local
 - Forms e validação
 
 ---
@@ -454,83 +464,85 @@ App de controle de despesas pessoais.
 ## 🔶 FASE 6: Flutter + APIs
 
 **Duração:** 6-8 semanas  
-**Pré-requisitos:** Fase 5 completa  
-**Objetivo:** Integrar apps Flutter com APIs e gerenciar estado
+**Pré-requisitos:** Fases 1, 2 e 5 completas  
+**Objetivo:** Integrar Flutter com APIs e gerenciar estado avançado
 
 ### 📚 O que você vai aprender:
 
-- Provider (state management)
 - HTTP requests
 - JSON parsing
-- Persistência local
-- Forms avançados
-- Error handling em UI
+- Provider para state management
+- Persistência com SQLite
+- Shared Preferences
+- Image caching
+- Error handling
 
 ### 📦 Repositórios:
 
-#### 6.1 - `06-flutter-provider`
-**Tópicos:**
-- O que é Provider?
-- ChangeNotifier
-- Provider types (Provider, ChangeNotifierProvider, etc)
-- Consumer widget
-- Provider.of vs Consumer
-- MultiProvider
-- ProxyProvider
-- Arquitetura com Provider
-
-**Exercícios:** 15+ exercícios  
-**Projeto:** App de contador com Provider
-
-#### 6.2 - `06-flutter-http-api`
+#### 6.1 - `06-flutter-http-api`
 **Tópicos:**
 - Package `http`
 - GET, POST, PUT, DELETE requests
 - Headers e authentication
-- JSON parsing com `dart:convert`
-- Model classes
-- Serialização/Deserialização
+- JSON serialization/deserialization
+- Freezed para data classes
 - Error handling
 - Loading states
-- FutureBuilder
-- Retry mechanisms
+- Retry logic
 
 **Exercícios:** 15+ exercícios  
-**Projeto:** App de notícias consumindo API
+**Projeto:** App consumindo API pública
 
-#### 6.3 - `06-flutter-local-storage`
+#### 6.2 - `06-flutter-provider`
+**Tópicos:**
+- O que é Provider?
+- ChangeNotifier
+- Consumer e Provider.of
+- MultiProvider
+- ProxyProvider
+- Separação de concerns
+- Repository pattern
+- Service layer
+
+**Exercícios:** 15+ exercícios  
+**Projeto:** App com Provider
+
+#### 6.3 - `06-flutter-persistence`
 **Tópicos:**
 - SharedPreferences
-- Hive database
-- SQLite com sqflite
-- Escolhendo storage certo
-- CRUD local
+- SQLite com `sqflite`
+- CRUD operations
 - Migrations
-- Offline-first approach
+- Queries complexas
+- Cached network images
+- File storage
+- Secure storage
 
-**Exercícios:** 12+ exercícios  
-**Projeto:** App de notas com Hive
+**Exercícios:** 10+ exercícios  
+**Projeto:** App com cache e database local
 
-#### 6.4 - `06-projeto-todo-app-fullstack`
+#### 6.4 - `06-projeto-flutter-social-app`
 **Projeto Final Integrado:**
 
-App de tarefas conectado a backend real.
+App social (clone de Instagram/Twitter simplificado).
 
 **Funcionalidades:**
-- CRUD de tarefas
-- Sincronização com API
-- Autenticação
-- Offline support
-- Pull to refresh
-- Paginação
-- Search e filtros
+- Login e registro
+- Feed de posts
+- Criar post com imagem
+- Like e comentários
+- Perfil de usuário
+- Seguir/deixar de seguir
+- Persistência local
+- Integração com backend
 
 **Conceitos aplicados:**
-- Provider para state management
-- HTTP para API integration
-- Hive para cache local
-- Tratamento de erros
-- Loading/error states
+- HTTP + API integration
+- Provider para state
+- SQLite para cache
+- Image picker e display
+- Complex UI
+- Navigation
 
 ---
 
@@ -538,72 +550,80 @@ App de tarefas conectado a backend real.
 
 **Duração:** 4-6 semanas  
 **Pré-requisitos:** Fase 6 completa  
-**Objetivo:** Padrões avançados e qualidade de código
+**Objetivo:** Arquitetura, testing e state management avançado
 
 ### 📚 O que você vai aprender:
 
 - Riverpod
 - Clean Architecture
-- MVVM pattern
-- Testing (Unit, Widget, Integration)
+- Testing (unit, widget, integration)
+- CI/CD
 - Performance optimization
+- Animações avançadas
 
 ### 📦 Repositórios:
 
-#### 6.5.1 - `06-flutter-riverpod`
+#### 6.5.1 - `065-flutter-riverpod`
 **Tópicos:**
-- Provider vs Riverpod
-- Instalação e setup
+- Riverpod vs Provider
+- Providers (Provider, StateProvider, FutureProvider, StreamProvider)
+- StateNotifier e StateNotifierProvider
+- Family e autoDispose
 - ProviderScope
-- StateProvider, StateNotifierProvider
-- FutureProvider, StreamProvider
-- Family e AutoDispose
-- ref.watch vs ref.read
-- Code generation
-
-**Exercícios:** 12+ exercícios  
-**Projeto:** Migrar app Provider para Riverpod
-
-#### 6.5.2 - `06-flutter-architecture`
-**Tópicos:**
-- Clean Architecture principles
-- Layers (Presentation, Domain, Data)
-- MVVM pattern
-- Repository pattern
-- Use cases
+- Testing com Riverpod
 - Dependency injection
-- Folder structure
-- Separation of concerns
-
-**Exercícios:** 10+ exercícios  
-**Projeto:** Refatorar app com Clean Architecture
-
-#### 6.5.3 - `06-flutter-testing`
-**Tópicos:**
-- Unit tests
-- Widget tests
-- Integration tests
-- Mocking com Mockito
-- Test coverage
-- Golden tests
-- TDD (Test-Driven Development)
 
 **Exercícios:** 15+ exercícios  
-**Projeto:** Testar app completo
+**Projeto:** Migrar projeto Provider para Riverpod
 
-#### 6.5.4 - `06-projeto-production-ready-app`
+#### 6.5.2 - `065-flutter-architecture`
+**Tópicos:**
+- Clean Architecture principles
+- Presentation, Domain, Data layers
+- Use cases
+- Repositories
+- Entities vs Models
+- Dependency Inversion
+- SOLID principles
+- Project structure
+
+**Exercícios:** 10+ exercícios  
+**Projeto:** App com Clean Architecture
+
+#### 6.5.3 - `065-flutter-testing`
+**Tópicos:**
+- Unit tests com `test` package
+- Widget tests
+- Integration tests
+- Mocking com `mockito`
+- Test coverage
+- Golden tests
+- TDD approach
+- CI/CD com GitHub Actions
+
+**Exercícios:** 15+ exercícios  
+**Projeto:** Adicionar testes ao projeto anterior
+
+#### 6.5.4 - `065-projeto-flutter-advanced`
 **Projeto Final Integrado:**
 
-App production-ready seguindo best practices.
+App production-ready com todas as best practices.
 
-**Características:**
+**Funcionalidades:**
+- Feature completa (ex: marketplace, delivery)
 - Clean Architecture
 - Riverpod
 - 80%+ test coverage
-- CI/CD ready
+- CI/CD pipeline
 - Error tracking
 - Analytics
-- Performance optimized
+- Performance optimization
+
+**Conceitos aplicados:**
+- Todos os conceitos avançados
+- Production-ready
+- Testable code
+- Maintainable architecture
 
 ---
 
@@ -611,15 +631,16 @@ App production-ready seguindo best practices.
 
 **Duração:** 8-10 semanas  
 **Pré-requisitos:** Fases anteriores completas  
-**Objetivo:** Tópicos avançados e especializações
+**Objetivo:** Tópicos avançados e especializados
 
 ### 📚 O que você vai aprender:
 
-- Platform Channels (Kotlin)
-- MCP (Model Context Protocol)
-- Integração com IA
-- Microservices com Dart
-- Real-time com WebSockets
+- Platform Channels
+- Microservices
+- Model Context Protocol (MCP)
+- IA integration
+- Performance otimization
+- Publishing apps
 
 ### 📦 Repositórios:
 
@@ -629,16 +650,17 @@ App production-ready seguindo best practices.
 - MethodChannel
 - EventChannel
 - BasicMessageChannel
-- Escrevendo código Kotlin
-- Integração Android nativa
+- Comunicação Flutter ↔ Native
+- iOS native code (Swift/Objective-C)
+- Android native code (Kotlin/Java)
 - Plugins customizados
 
 **Exercícios:** 10+ exercícios  
-**Projeto:** Plugin customizado Android
+**Projeto:** Plugin customizado
 
-#### 7.2 - `07-dart-mcp-integration`
+#### 7.2 - `07-dart-mcp-protocol`
 **Tópicos:**
-- O que é MCP?
+- O que é Model Context Protocol?
 - Protocol basics
 - Tools e resources
 - Sampling
@@ -752,10 +774,19 @@ Este roadmap está em construção ativa! Contribua:
 **[Abra uma issue](../../issues)** com suas sugestões!
 
 ---
+---
+---
 
-<a name="english"></a>
+<div align="center">
 
-## 🇺🇸 English
+## <a name="english"></a>
+🇺🇸 **ENGLISH**
+
+[![Mudar para Português](https://img.shields.io/badge/🇧🇷_Mudar_para-Português-green)](#português)
+
+</div>
+
+---
 
 ### Complete Learning Roadmap
 
@@ -865,7 +896,577 @@ Complete command-line task management system.
 
 ---
 
-*[Note: Due to length, I'm providing the full Portuguese version above. The English version follows the same structure with translated content for all 7 phases. Would you like me to continue with the complete English translation?]*
+## 🔶 PHASE 2: Intermediate Dart
+
+**Duration:** 6-8 weeks  
+**Prerequisites:** Phase 1 complete  
+**Goal:** Master advanced OOP and asynchronous programming concepts
+
+### 📚 What you'll learn:
+
+- Advanced OOP (mixins, interfaces, abstract classes)
+- Generics
+- Null Safety
+- Error handling
+- Async/Await
+- Futures
+- Exception handling
+
+### 📦 Repositories:
+
+#### 2.1 - `02-dart-oop-advanced`
+**Topics:**
+- Abstract classes
+- Interfaces with `implements`
+- Mixins with `with`
+- Extension methods
+- Callable classes
+- `static` members
+- Enums
+- Basic design patterns (Factory, Singleton)
+
+**Exercises:** 20+ exercises  
+**Project:** Payment system (multiple payment methods)
+
+#### 2.2 - `02-dart-generics-nullsafety`
+**Topics:**
+- Generics in classes
+- Generics in functions
+- Type constraints
+- Null Safety fundamentals
+- Nullable types (`?`)
+- Non-nullable by default
+- Null assertion (`!`)
+- Null-aware operators (`??`, `?.`, `??=`)
+- Late variables
+- Required parameters
+
+**Exercises:** 15+ exercises  
+**Project:** Generic data structures (Stack, Queue)
+
+#### 2.3 - `02-dart-async-futures`
+**Topics:**
+- Synchronous vs asynchronous programming
+- `Future<T>`
+- `async` and `await`
+- `then()` and `catchError()`
+- `Future.delayed()`
+- `Future.value()` and `Future.error()`
+- Chaining Futures
+- `Future.wait()` for parallelism
+- Try-catch with async/await
+
+**Exercises:** 15+ exercises  
+**Project:** Simple HTTP client (consume public API)
+
+#### 2.4 - `02-projeto-weather-cli`
+**Integrated Final Project:**
+
+CLI application that consumes weather API and displays forecasts.
+
+**Features:**
+- Search weather by city
+- Display temperature, humidity, conditions
+- Search history
+- Result caching
+- Network error handling
+
+**Applied concepts:**
+- Async/await for HTTP requests
+- Generics for strong typing
+- Null safety in API data
+- Robust error handling
+- Advanced OOP for modeling
+
+---
+
+## 🔷 PHASE 3: Advanced Dart + Backend
+
+**Duration:** 6-8 weeks  
+**Prerequisites:** Phase 2 complete  
+**Goal:** Streams, reactive programming and backend introduction
+
+### 📚 What you'll learn:
+
+- Streams
+- Reactive programming
+- Basic HTTP Server with Shelf
+- Vaden Framework introduction
+- Basic routing
+- Middleware concepts
+
+### 📦 Repositories:
+
+#### 3.1 - `03-dart-streams-reactive`
+**Topics:**
+- `Stream<T>`
+- Single-subscription vs Broadcast streams
+- `StreamController`
+- `await for` loop
+- Stream transformers (`map`, `where`, `expand`)
+- `listen()`, `onData`, `onError`, `onDone`
+- `StreamSubscription`
+- `async*` and `yield`
+- Backpressure handling
+
+**Exercises:** 15+ exercises  
+**Project:** Real-time system monitor
+
+#### 3.2 - `03-dart-http-server-shelf`
+**Topics:**
+- HTTP basics (request, response, methods, status codes)
+- Installing Shelf package
+- Creating HTTP server
+- Handlers and routing
+- Request parsing
+- Response building
+- Basic middleware
+- Serving static files
+
+**Exercises:** 10+ exercises  
+**Project:** Simple REST API (in-memory CRUD)
+
+#### 3.3 - `03-vaden-framework-intro`
+**Topics:**
+- What is Vaden?
+- Installation and setup
+- Annotations (`@Controller`, `@Get`, `@Post`)
+- Basic Dependency Injection
+- Automatic routing
+- DTOs (Data Transfer Objects)
+- Request/Response handling
+- OpenAPI/Swagger integration
+
+**Exercises:** 10+ exercises  
+**Project:** Products API (CRUD without persistence)
+
+#### 3.4 - `03-projeto-rest-api-tasks`
+**Integrated Final Project:**
+
+Complete REST API for task management (no database yet).
+
+**Features:**
+- Complete CRUD of tasks
+- RESTful endpoints
+- Data validation
+- Error handling
+- OpenAPI documentation
+- Logging middleware
+
+**Applied concepts:**
+- Vaden framework
+- Streams for events
+- DTOs and validation
+- REST patterns
+
+---
+
+## 🔶 PHASE 4: Complete Backend
+
+**Duration:** 8-10 weeks  
+**Prerequisites:** Phase 3 complete  
+**Goal:** Production-ready backend with databases
+
+### 📚 What you'll learn:
+
+- Advanced Vaden Framework
+- PostgreSQL with Dart
+- MongoDB with Dart
+- ORMs and query builders
+- Authentication and authorization
+- Migrations
+- API testing
+
+### 📦 Repositories:
+
+#### 4.1 - `04-vaden-advanced`
+**Topics:**
+- Advanced Dependency Injection
+- Custom middlewares
+- Guards for authorization
+- Interceptors
+- Exception filters
+- Pipes for validation
+- WebSockets
+- Server-Sent Events (SSE)
+
+**Exercises:** 15+ exercises  
+**Project:** API with JWT authentication
+
+#### 4.2 - `04-postgresql-dart`
+**Topics:**
+- Installing PostgreSQL
+- Connecting with `postgres` package
+- Basic SQL queries (SELECT, INSERT, UPDATE, DELETE)
+- Prepared statements
+- Transactions
+- Connection pooling
+- Migrations with `drift` or similar
+- Schema design
+
+**Exercises:** 15+ exercises  
+**Project:** API with PostgreSQL persistence
+
+#### 4.3 - `04-mongodb-dart`
+**Topics:**
+- Installing MongoDB
+- Connecting with `mongo_dart`
+- CRUD operations
+- Queries and filters
+- Aggregation pipeline
+- Indexes
+- Schema validation
+- Embedded vs referenced documents
+
+**Exercises:** 10+ exercises  
+**Project:** API with MongoDB
+
+#### 4.4 - `04-projeto-backend-ecommerce`
+**Integrated Final Project:**
+
+Complete e-commerce backend with authentication.
+
+**Features:**
+- JWT authentication
+- Product CRUD
+- Shopping cart
+- Order system
+- PostgreSQL for transactional data
+- MongoDB for logs and analytics
+- Unit and integration tests
+
+**Applied concepts:**
+- Advanced Vaden
+- Multiple databases
+- Auth & authorization
+- Testing
+- Production-ready patterns
+
+---
+
+## 🔷 PHASE 5: Flutter Fundamentals
+
+**Duration:** 6-8 weeks  
+**Prerequisites:** Phase 1 complete (Phases 2-4 optional)  
+**Goal:** Master Flutter fundamentals
+
+### 📚 What you'll learn:
+
+- Basic widgets
+- Layout and composition
+- Navigation
+- Basic state management (setState)
+- Assets and images
+- Forms
+- Lists and grids
+
+### 📦 Repositories:
+
+#### 5.1 - `05-flutter-basics-widgets`
+**Topics:**
+- Flutter installation
+- Flutter project structure
+- Material Design vs Cupertino
+- StatelessWidget vs StatefulWidget
+- Basic widgets (Text, Container, Row, Column)
+- Padding, Margin, Alignment
+- Scaffold, AppBar, BottomNavigationBar
+- Buttons (ElevatedButton, TextButton, IconButton)
+- Icons and Colors
+
+**Exercises:** 15+ exercises  
+**Project:** Static profile app
+
+#### 5.2 - `05-flutter-layout-navigation`
+**Topics:**
+- Layout widgets (Stack, Expanded, Flexible)
+- ListView and GridView
+- SingleChildScrollView
+- Navigator and routes
+- Named routes
+- Passing data between screens
+- Hero animations
+- Bottom sheets and dialogs
+
+**Exercises:** 15+ exercises  
+**Project:** Multi-screen app with navigation
+
+#### 5.3 - `05-flutter-state-forms`
+**Topics:**
+- setState() and state management
+- TextEditingController
+- Form and FormField
+- Validation
+- TextField, Checkbox, Radio, Switch
+- DatePicker and TimePicker
+- DropdownButton
+- Basic InheritedWidget
+
+**Exercises:** 15+ exercises  
+**Project:** Complete registration form
+
+#### 5.4 - `05-projeto-flutter-todo-app`
+**Integrated Final Project:**
+
+Complete TODO list app with local persistence.
+
+**Features:**
+- Task CRUD
+- Filters (all/pending/completed)
+- Categories
+- Due date
+- Persistence with SharedPreferences
+- Responsive UI
+
+**Applied concepts:**
+- All learned widgets
+- Navigation
+- State management with setState
+- Local persistence
+- Forms and validation
+
+---
+
+## 🔶 PHASE 6: Flutter + APIs
+
+**Duration:** 6-8 weeks  
+**Prerequisites:** Phases 1, 2, and 5 complete  
+**Goal:** Integrate Flutter with APIs and manage advanced state
+
+### 📚 What you'll learn:
+
+- HTTP requests
+- JSON parsing
+- Provider for state management
+- SQLite persistence
+- Shared Preferences
+- Image caching
+- Error handling
+
+### 📦 Repositories:
+
+#### 6.1 - `06-flutter-http-api`
+**Topics:**
+- `http` package
+- GET, POST, PUT, DELETE requests
+- Headers and authentication
+- JSON serialization/deserialization
+- Freezed for data classes
+- Error handling
+- Loading states
+- Retry logic
+
+**Exercises:** 15+ exercises  
+**Project:** App consuming public API
+
+#### 6.2 - `06-flutter-provider`
+**Topics:**
+- What is Provider?
+- ChangeNotifier
+- Consumer and Provider.of
+- MultiProvider
+- ProxyProvider
+- Separation of concerns
+- Repository pattern
+- Service layer
+
+**Exercises:** 15+ exercises  
+**Project:** App with Provider
+
+#### 6.3 - `06-flutter-persistence`
+**Topics:**
+- SharedPreferences
+- SQLite with `sqflite`
+- CRUD operations
+- Migrations
+- Complex queries
+- Cached network images
+- File storage
+- Secure storage
+
+**Exercises:** 10+ exercises  
+**Project:** App with cache and local database
+
+#### 6.4 - `06-projeto-flutter-social-app`
+**Integrated Final Project:**
+
+Social app (simplified Instagram/Twitter clone).
+
+**Features:**
+- Login and registration
+- Post feed
+- Create post with image
+- Like and comments
+- User profile
+- Follow/unfollow
+- Local persistence
+- Backend integration
+
+**Applied concepts:**
+- HTTP + API integration
+- Provider for state
+- SQLite for cache
+- Image picker and display
+- Complex UI
+- Navigation
+
+---
+
+## 🔷 PHASE 6.5: Advanced Flutter
+
+**Duration:** 4-6 weeks  
+**Prerequisites:** Phase 6 complete  
+**Goal:** Architecture, testing and advanced state management
+
+### 📚 What you'll learn:
+
+- Riverpod
+- Clean Architecture
+- Testing (unit, widget, integration)
+- CI/CD
+- Performance optimization
+- Advanced animations
+
+### 📦 Repositories:
+
+#### 6.5.1 - `065-flutter-riverpod`
+**Topics:**
+- Riverpod vs Provider
+- Providers (Provider, StateProvider, FutureProvider, StreamProvider)
+- StateNotifier and StateNotifierProvider
+- Family and autoDispose
+- ProviderScope
+- Testing with Riverpod
+- Dependency injection
+
+**Exercises:** 15+ exercises  
+**Project:** Migrate Provider project to Riverpod
+
+#### 6.5.2 - `065-flutter-architecture`
+**Topics:**
+- Clean Architecture principles
+- Presentation, Domain, Data layers
+- Use cases
+- Repositories
+- Entities vs Models
+- Dependency Inversion
+- SOLID principles
+- Project structure
+
+**Exercises:** 10+ exercises  
+**Project:** App with Clean Architecture
+
+#### 6.5.3 - `065-flutter-testing`
+**Topics:**
+- Unit tests with `test` package
+- Widget tests
+- Integration tests
+- Mocking with `mockito`
+- Test coverage
+- Golden tests
+- TDD approach
+- CI/CD with GitHub Actions
+
+**Exercises:** 15+ exercises  
+**Project:** Add tests to previous project
+
+#### 6.5.4 - `065-projeto-flutter-advanced`
+**Integrated Final Project:**
+
+Production-ready app with all best practices.
+
+**Features:**
+- Complete feature (e.g., marketplace, delivery)
+- Clean Architecture
+- Riverpod
+- 80%+ test coverage
+- CI/CD pipeline
+- Error tracking
+- Analytics
+- Performance optimization
+
+**Applied concepts:**
+- All advanced concepts
+- Production-ready
+- Testable code
+- Maintainable architecture
+
+---
+
+## 🔶 PHASE 7: Specialized Topics
+
+**Duration:** 8-10 weeks  
+**Prerequisites:** Previous phases complete  
+**Goal:** Advanced and specialized topics
+
+### 📚 What you'll learn:
+
+- Platform Channels
+- Microservices
+- Model Context Protocol (MCP)
+- AI integration
+- Performance optimization
+- Publishing apps
+
+### 📦 Repositories:
+
+#### 7.1 - `07-flutter-platform-channels`
+**Topics:**
+- What are Platform Channels?
+- MethodChannel
+- EventChannel
+- BasicMessageChannel
+- Flutter ↔ Native communication
+- iOS native code (Swift/Objective-C)
+- Android native code (Kotlin/Java)
+- Custom plugins
+
+**Exercises:** 10+ exercises  
+**Project:** Custom plugin
+
+#### 7.2 - `07-dart-mcp-protocol`
+**Topics:**
+- What is Model Context Protocol?
+- Protocol basics
+- Tools and resources
+- Sampling
+- Prompts
+- Integration with Claude/other LLMs
+- Practical use cases
+
+**Exercises:** 10+ exercises  
+**Project:** CLI tool with MCP
+
+#### 7.3 - `07-dart-ai-integration`
+**Topics:**
+- AI APIs (OpenAI, Claude, etc)
+- Prompt engineering
+- Context management
+- Streaming responses
+- Error handling
+- Rate limiting
+- Cost optimization
+
+**Exercises:** 10+ exercises  
+**Project:** Chatbot with AI
+
+#### 7.4 - `07-projeto-final-fullstack-ai`
+**Integrated Final Project:**
+
+Fullstack application with AI feature.
+
+**Suggestions:**
+- Document analysis app with AI
+- Code assistant
+- Intelligent chatbot
+- Recommendation system
+
+**Applied concepts:**
+- Flutter + Backend + AI
+- Microservices
+- Real-time communication
+- Platform channels if needed
+- Production-ready
 
 ---
 
@@ -943,6 +1544,8 @@ This roadmap is actively under construction! Contribute by:
 <div align="center">
 
 **Made with ❤️ for the Dart/Flutter community**
+
+[![Back to Top](https://img.shields.io/badge/⬆️_Back_to-Top-blue)](#-roadmap---dart-learning-hub)
 
 [Back to Start](./README.md) • [Contribute](./CONTRIBUTING.md) • [License](./LICENSE)
 
